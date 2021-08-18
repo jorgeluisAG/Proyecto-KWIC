@@ -1,26 +1,12 @@
 package Proyecto_KWIC;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JTextField;
-import javax.swing.JButton;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.awt.event.ActionEvent;
-import java.awt.Font;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
-import javax.swing.JTextArea;
-import javax.swing.JScrollBar;
-import javax.swing.JComboBox;
-import javax.swing.JFileChooser;
-import javax.swing.JScrollPane;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextPane;
 
 public class View {
 
@@ -31,6 +17,7 @@ public class View {
 	private JScrollPane scrollPane;
 	private JScrollPane scrollPane1;
 	private JButton btnBuscar;
+	private keywords cab;
 
 	/**
 	 * Launch the application.
@@ -78,10 +65,11 @@ public class View {
 					String texto="";
 					String linea="";
 					while(((linea=br.readLine())!=null)) {
+						cab=adicionar(cab,linea,palabras_clave(linea),Circular(linea,palabras_clave(linea)));
 						texto+=linea+"\n";
 					}
 					textArea.setText(texto);
-					//JOptionPane.showMessageDialog(null, "Archivo Leido Correctamente");
+
 				}catch(Exception e1) {
 					
 				}
@@ -93,6 +81,7 @@ public class View {
 		textField = new JTextField();
 		textField.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		textField.setBounds(250, 382, 421, 35);
+
 		frmKwic.getContentPane().add(textField);
 		textField.setColumns(10);
 
@@ -120,7 +109,8 @@ public class View {
 		btnBuscar = new JButton("Buscar");
 		btnBuscar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				menu("hola mundo");
+
+				textArea1.setText(buscar(cab,textField.getText()));
 			}
 		});
 		btnBuscar.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -128,14 +118,57 @@ public class View {
 		frmKwic.getContentPane().add(btnBuscar);
 	}
 
-	public static void menu(String buscar){
-		String str= "titulos.txt";
-		keywords cab=null;
-		cab=enviar(str,cab);
-		listado(cab);
+	public static String buscar(keywords c,String bus){
+		String titulo="";
+		String busq[]=bus.split(" ");
+		Boolean centi=false;
+		int cc=0;
+		while(c!=null) {
+			// System.out.print("Titulo : "+c.titulos);
+			for(int i=0;i< ((String[])c.iteraciones).length ;i++){
+				String pal[]=((String[])c.iteraciones)[i].split(" ");
+				for(int k=0;k<busq.length;k++){
+					//System.out.println(" palabra busqueda : " + busq[k]);
+					for(int u=0;u<pal.length;u++){
+
+						// System.out.println(" palabras titulo : " + pal[u]);
+						if(centi){
+
+							if(busq[k].equalsIgnoreCase(pal[u])){
+								u--;
+								cc++;
+								break;
+							}
+						}else{
+							if(busq[k].equalsIgnoreCase(pal[0])){
+
+								u--;
+								cc++;
+								centi=true;
+								break;
+							}
+						}
+
+					}
+					if(k+1==busq.length){
+						if(cc==busq.length){
+							titulo+=c.titulos+"\n";
+							System.out.println("Titulo : "+c.titulos);
+							System.out.println("ENCONTRADO : =>"+((String[])c.iteraciones)[i]);
+
+						}
+						centi=false;
+						cc=0;
+					}
+				}
+			}
 
 
+			c=c.sgte;
+		}
+		return titulo;
 	}
+
 
 	public static keywords enviar(String str, keywords cab){
 		File archivo = null;
