@@ -120,6 +120,7 @@ public class View {
 		btnBuscar = new JButton("Buscar");
 		btnBuscar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				menu("hola mundo");
 			}
 		});
 		btnBuscar.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -127,11 +128,12 @@ public class View {
 		frmKwic.getContentPane().add(btnBuscar);
 	}
 
-	main(String titulo){
-		String str= titulo;
+	public static void menu(String buscar){
+		String str= "titulos.txt";
 		keywords cab=null;
 		cab=enviar(str,cab);
 		listado(cab);
+
 
 	}
 
