@@ -8,32 +8,16 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
-public class View {
+public class View extends JFrame implements ActionListener{
 
-	private JFrame frmKwic;
 	private JTextField textField;
 	private JTextArea textArea;
 	private JTextArea textArea1;
 	private JScrollPane scrollPane;
 	private JScrollPane scrollPane1;
 	private JButton btnBuscar;
+	private JButton btnSubirArchivo;
 	private keywords cab;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					View window = new View();
-					window.frmKwic.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
 	/**
 	 * Create the application.
@@ -46,76 +30,75 @@ public class View {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frmKwic = new JFrame();
-		frmKwic.setTitle("KWIC");
-		frmKwic.setBounds(100, 100, 922, 708);
-		frmKwic.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmKwic.getContentPane().setLayout(null);
-
-		JButton btnSubirArchivo = new JButton("Subir Archivo");
-		btnSubirArchivo.setFont(new Font("Tahoma", Font.BOLD, 14));
-		btnSubirArchivo.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JFileChooser fc = new JFileChooser();
-				fc.showOpenDialog(null);
-				File archivo = fc.getSelectedFile();
-				try {
-					FileReader fr = new FileReader(archivo);
-					BufferedReader br = new BufferedReader(fr);
-					String texto="";
-					String linea="";
-					while(((linea=br.readLine())!=null)) {
-						cab=adicionar(cab,linea,palabras_clave(linea),Circular(linea,palabras_clave(linea)));
-						texto+=linea+"\n";
-					}
-					textArea.setText(texto);
-
-				}catch(Exception e1) {
-					
-				}
-			}
-		});
-		btnSubirArchivo.setBounds(102, 382, 138, 35);
-		frmKwic.getContentPane().add(btnSubirArchivo);
-
-		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		textField.setBounds(250, 382, 421, 35);
-
-		frmKwic.getContentPane().add(textField);
-		textField.setColumns(10);
+		setTitle("KWIC");
+		setBounds(100, 100, 922, 708);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
 
 		JLabel titulo = new JLabel("Key Word In Context");
 		titulo.setFont(new Font("Tahoma", Font.BOLD, 30));
 		titulo.setBounds(279, 41, 369, 35);
-		frmKwic.getContentPane().add(titulo);
-		
+		getContentPane().add(titulo);
 
-		
+		btnSubirArchivo = new JButton("Subir Archivo");
+		btnSubirArchivo.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnSubirArchivo.addActionListener(this);
+		btnSubirArchivo.setBounds(102, 382, 138, 35);
+		getContentPane().add(btnSubirArchivo);
+
+		textField = new JTextField();
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		textField.setBounds(250, 382, 421, 35);
+		getContentPane().add(textField);
+		textField.setColumns(10);
+
+
 		textArea = new JTextArea();
 		textArea.setEnabled(true);
 		textArea.setEditable(false);
 		scrollPane = new JScrollPane(textArea);
 		scrollPane.setBounds(102, 111, 698, 231);
-		frmKwic.getContentPane().add(scrollPane);
+		getContentPane().add(scrollPane);
 		
 		textArea1 = new JTextArea();
 		textArea1.setEnabled(true);
 		textArea1.setEditable(false);
 		scrollPane1 = new JScrollPane(textArea1);
 		scrollPane1.setBounds(102, 446, 698, 191);
-		frmKwic.getContentPane().add(scrollPane1);
+		getContentPane().add(scrollPane1);
 		
 		btnBuscar = new JButton("Buscar");
-		btnBuscar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-
-				textArea1.setText(buscar(cab,textField.getText()));
-			}
-		});
+		btnBuscar.addActionListener(this);
 		btnBuscar.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnBuscar.setBounds(681, 382, 119, 35);
-		frmKwic.getContentPane().add(btnBuscar);
+		getContentPane().add(btnBuscar);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==btnSubirArchivo){
+			JFileChooser fc = new JFileChooser();
+			fc.showOpenDialog(null);
+			File archivo = fc.getSelectedFile();
+			try {
+				FileReader fr = new FileReader(archivo);
+				BufferedReader br = new BufferedReader(fr);
+				String texto="";
+				String linea="";
+				while(((linea=br.readLine())!=null)) {
+					cab=adicionar(cab,linea,palabras_clave(linea),Circular(linea,palabras_clave(linea)));
+					texto+=linea+"\n";
+				}
+				textArea.setText(texto);
+
+			}catch(Exception e1) {
+
+			}
+		}else {
+			if(e.getSource()==btnBuscar){
+				textArea1.setText(buscar(cab,textField.getText()));
+			}
+		}
 	}
 
 	public static String buscar(keywords c,String bus){
@@ -292,4 +275,6 @@ public class View {
 		}
 
 	}
+
+
 }
