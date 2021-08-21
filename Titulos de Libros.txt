@@ -11,7 +11,7 @@ Arquitectura de Sistemas de Software Trabajar con las Partes Interesadas Utiliza
 Arquitectura de Software en la Practica
 Arquitectura de Software Esencial
 Arquitectura de Software Orientada a Patrones
-Arquitectura de Software Orientada a Patrones, Sobre Patrones y Lenguajes de Patrones
+Arquitectura de Software Orientada a Patrones Sobre Patrones y Lenguajes de Patrones
 Arquitectura de Software Sostenible Analizar y Reducir la Deuda Tecnica
 Arquitectura de Software Suficiente un Enfoque Basado en el Riesgo
 Arquitectura de Software Fundamentos, Teoria y Practica
@@ -19,6 +19,8 @@ Arquitectura del Software Spanish Edition
 Arquitectura Limpia Una Guia para el Artesano sobre la Estructura y el Diseño del Software
 Arquitectura Limpia Guia para Especialistas en la Estructura y el Diseño de Software
 Arquitecturas Reactivas Front-End
+Analisis y Diseño de Sistemas
+Analisis y Diseño Orientado a Objetos con UML y el Proceso Unificado
 Big Data, Analisis de Grandes Volumenes de Datos en Organizaciones
 Calidad de las Arquitecturas de Software
 Ciencia De Datos Desde Cero
@@ -91,8 +93,6 @@ Scrum: el Arte de hacer el Doble de Trabajo en la Mitad de Tiempo
 Software en 30 Dias Como los Gerentes Agiles Superan las Probabilidades Deleitan a sus Clientes y Dejan a los Competidores en el Polvo
 Spring Boot en Marcha
 Spring Microservicios con Spring Boot Cree e Implemente Microservicios con Spring Boot
-Analisis y Diseño de Sistemas
-Analisis y Diseño Orientado a Objetos con UML y el Proceso Unificado
 Teleinformatica para Ingenieros en Sistemas de Informacion
 Teoria General de Sistemas un Enfoque hacia la Ingenieria de Sistemas
 UML 2 y el Proceso Unificado Analisis y Diseño Practico Orientado a Objetos
