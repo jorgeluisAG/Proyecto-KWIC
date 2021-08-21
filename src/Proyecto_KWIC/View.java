@@ -90,7 +90,7 @@ public class View extends JFrame implements ActionListener{
 					texto+=linea+"\n";
 				}
 				textArea.setText(texto);
-
+			listado(cab);
 			}catch(Exception e1) {
 
 			}
@@ -103,113 +103,59 @@ public class View extends JFrame implements ActionListener{
 
 	public static String buscar(keywords c,String bus){
 		String titulo="";
-		String busq[]=bus.split(" ");
-		Boolean centi=false;
+		String busq[]=palabras_clave(bus).split(" ");
+		int ox=0;
 		int cc=0;
+		Boolean centi;
 		while(c!=null) {
-			// System.out.print("Titulo : "+c.titulos);
+
 			for(int i=0;i< ((String[])c.iteraciones).length ;i++){
 				String pal[]=((String[])c.iteraciones)[i].split(" ");
-				for(int k=0;k<busq.length;k++){
-					//System.out.println(" palabra busqueda : " + busq[k]);
-					for(int u=0;u<pal.length;u++){
-
-						// System.out.println(" palabras titulo : " + pal[u]);
-						if(centi){
-
-							if(busq[k].equalsIgnoreCase(pal[u])){
-								u--;
-								cc++;
-								break;
-							}
-						}else{
-							if(busq[k].equalsIgnoreCase(pal[0])){
-
-								u--;
-								cc++;
-								centi=true;
-								break;
-							}
+					centi=true;
+					for(int k=0;k<busq.length;k++){
+						if(busq[k].equalsIgnoreCase(pal[k])!=true){
+							centi=false;
+							break;
 						}
-
 					}
-					if(k+1==busq.length){
-						if(cc==busq.length){
-							titulo+=c.titulos+"\n";
-							System.out.println("Titulo : "+c.titulos);
-							System.out.println("ENCONTRADO : =>"+((String[])c.iteraciones)[i]);
-
-						}
-						centi=false;
-						cc=0;
+					if(centi){
+						System.out.println("encontrado");
+						titulo+=c.titulos+"\n";
+						break;
 					}
-				}
 			}
-
-
 			c=c.sgte;
 		}
 		return titulo;
 	}
 
-
-	public static keywords enviar(String str, keywords cab){
-		File archivo = null;
-		FileReader fr = null;
-		BufferedReader br = null;
-
-		try {
-			archivo = new File (str);
-			fr = new FileReader (archivo);
-			br = new BufferedReader(fr);
-			String linea;
-			while((linea=br.readLine())!=null) {
-
-				cab=adicionar(cab,linea,palabras_clave(linea),Circular(linea,palabras_clave(linea)));
-			}
-		}
-		catch(Exception e){
-			e.printStackTrace();
-		}finally{
-			try{
-				if( null != fr ){
-					fr.close();
-				}
-			}catch (Exception e2){
-				e2.printStackTrace();
-			}
-		}
-		return cab;
-	}
-
-	public static String[] Circular(String str,String[] palabra){
-		String pal[] = str.split(" ");
+	public static String[] Circular(String str,String palabras){
+		String pal[] = palabras_clave(str).split(" ");
 		String an="",des="",sum="";
+		String palabra[] = palabras.split(" ");
 		String cir[] = new String[palabra.length];
 		Boolean x=false;
 		for(int i=0;i<palabra.length;i++){
 			sum="";
 			an="";
 			des="";
-			x=false;
 			for(int j=0;j<pal.length;j++){
 				if(palabra[i].equalsIgnoreCase(pal[j])){
-					x=true;
-				}
-				if(x){
 					an=an+pal[j]+" ";
 				}else{
 					des=des+pal[j]+" ";
 				}
+
 			}
 			sum=an+des;
 			cir[i]=sum;
 		}
 		return cir;
+
 	}
 
-	public static String[] palabras_clave(String str){
-		String v[]={"2ª","las","los","con","como","que","no","lo","en","de","la","y","al","el","o","a","por","tu","si","-","1","2","3","4","5","6","7","8","9","0","del","Los","El","La","Una","Un","Uso","En","Las","Los","los","Del"};
+	public static String palabras_clave(String str){
+		String v[]={"12","para","97","2ª","las","los","con","como","que","no","lo","en","de","la","y","al","el","o","a","por","tu","si","-","1","2","3","4","5","6","7","8","9","0","del","Los","El","La","Una","Un","Uso","En","Las","Los","los","Del"};
 		String pal[] = str.split(" ");
 		String cont="";
 		Boolean centi=true,centi2=true;
@@ -217,7 +163,6 @@ public class View extends JFrame implements ActionListener{
 			for(int j=0;j<v.length;j++){
 				if(pal[i].equalsIgnoreCase(v[j])){
 					centi=true;
-
 					break;
 				}else{
 					centi=false;
@@ -234,13 +179,11 @@ public class View extends JFrame implements ActionListener{
 			}
 
 		}
-		String palabras[] = cont.split(" ");
 
-
-		return palabras;
+		return cont;
 	}
 
-	public static keywords adicionar(keywords a,String pal,String[] palabras,String[] cir) {
+	public static keywords adicionar(keywords a,String pal,String palabras,String[] cir) {
 		keywords c=null;
 		keywords b=new keywords();
 		b.titulos=pal;
@@ -263,9 +206,9 @@ public class View extends JFrame implements ActionListener{
 		while(c!=null) {
 			System.out.print("Titulo : "+c.titulos);
 			System.out.print("\nPalabras clave : ");
-			for(int i=0;i< ((String[])c.Palabras).length ;i++){
-				System.out.print("/"+((String[])c.Palabras)[i]);
-			}
+
+				System.out.print("/"+(c.Palabras));
+
 			System.out.print("\n");
 			for(int i=0;i< ((String[])c.iteraciones).length ;i++){
 				System.out.println("-->"+((String[])c.iteraciones)[i]);
