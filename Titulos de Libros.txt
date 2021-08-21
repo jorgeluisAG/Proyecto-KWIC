@@ -1,46 +1,48 @@
 12 Habilidades Esenciales para Arquitectos de Software
-97 Cosas Que Todo Arquitecto de Software Debe Saber
-Adopcion del Proceso Unificado Racional: Éxito con el RUP
-Algoritmos y Estructuras de Datos: una Perspectiva en C
-Aplicacion de Casos de Uso: Una Guia Practica
+97 Cosas que todo Arquitecto de Software debe Saber
+Adopcion del Proceso Unificado Racional Exito con el RUP
+Algoritmos y Estructuras de Datos una Perspectiva en C
+Aplicacion de Casos de Uso una Guia Practica
 Aplicacion de UML y Patrones
-Aprende SQL en un Fin de Semana: El Curso Definitivo para Crear y Consultar Bases de Datos
-Aprender la Programacion Orientada a Objetos con el Lenguaje C#
+Aprende SQL en un Fin de Semana el Curso Definitivo para Crear y Consultar Bases de Datos
+Aprender la Programacion Orientada a Objetos con el Lenguaje C
 Arquitecto de Software Bootcamp
-Arquitectura de Sistemas de Software: Trabajar con las Partes Interesadas Utilizando Puntos de Vista y Perspectivas
+Arquitectura de Sistemas de Software Trabajar con las Partes Interesadas Utilizando Puntos de Vista y Perspectivas
 Arquitectura de Software en la Practica
 Arquitectura de Software Esencial
 Arquitectura de Software Orientada a Patrones
-Arquitectura de Software Orientada a Patrones, Sobre Patrones y Lenguajes de Patrones
-Arquitectura de Software Sostenible: Analizar y Reducir la Deuda Técnica
-Arquitectura de Software Suficiente: un Enfoque Basado en el Riesgo
-Arquitectura de Software: Fundamentos, Teoria y Practica
-Arquitectura del Software - Spanish Edition
-Arquitectura Limpia: Una Guia para el Artesano sobre la Estructura y el Diseño del Software
-Arquitectura Limpia: Guia para Especialistas en la Estructura y el Diseño de Software
+Arquitectura de Software Orientada a Patrones Sobre Patrones y Lenguajes de Patrones
+Arquitectura de Software Sostenible Analizar y Reducir la Deuda Tecnica
+Arquitectura de Software Suficiente un Enfoque Basado en el Riesgo
+Arquitectura de Software Fundamentos, Teoria y Practica
+Arquitectura del Software Spanish Edition
+Arquitectura Limpia Una Guia para el Artesano sobre la Estructura y el Diseño del Software
+Arquitectura Limpia Guia para Especialistas en la Estructura y el Diseño de Software
 Arquitecturas Reactivas Front-End
+Analisis y Diseño de Sistemas
+Analisis y Diseño Orientado a Objetos con UML y el Proceso Unificado
 Big Data, Analisis de Grandes Volumenes de Datos en Organizaciones
 Calidad de las Arquitecturas de Software
 Ciencia De Datos Desde Cero
-Ciencia de Datos y Analisis de Big Data: Descubrir, Analizar, Visualizar y Presentar Datos
+Ciencia de Datos y Analisis de Big Data Descubrir y Analizar
 Construyendo Arquitecturas Evolutivas
 Creacion de Microservicios Diseño de Sistemas de Grano Fino
-Curso de Programacion y Analisis de Software - Tercera Edicion
+Curso de Programacion y Analisis de Software Tercera Edicion
 Curso de Programacion y Analisis de Software Integrado
-Desarrollador Web Front-end: Javascript, Html5 y Css3
+Desarrollador Web Front-End Javascript Html5 y Css3
 Desarrollo agil de Software con SCRUM
-Desarrollo de Aplicaciones Java con Spring y Spring Boot: Soluciones Practicas de Spring y Spring Boot para Crear Aplicaciones
+Desarrollo de Aplicaciones Java con Spring y Spring Boot Soluciones Practicas de Spring y Spring Boot para Crear Aplicaciones
 Desarrollo Global de Software
 Diseño Basado en Modelos y Evaluacion de Aplicaciones Interactivas
 Diseño de Aplicaciones de Uso Intensivo de Datos
 Diseño de Arquitecturas de Software un Enfoque Practico
-Diseño de Sistemas Interactivos Centrados en el Usuario
+Diseño de Sistemas Interactivos un uso Personal
 Diseño de Sistemas Interactivos Centrados en el Usuario
 Diseño de Software Orientado a Objetos
 Documentacion de Arquitecturas de Software Vistas y mas alla
-Dominar Spring Boot 2.0: Construir Sistemas Modernos, Nativos de la Nube y Distribuidos Utilizando Spring Boot
+Dominar Spring Boot 2.0 Construir Sistemas Modernos Nativos de la Nube y Distribuidos Utilizando Spring Boot
 el Arte del Desarrollo agil
-el Ascensor del Arquitecto de Software: Redefiniendo el Papel del Arquitecto en la Empresa Digital
+el Ascensor del Arquitecto de Software Redefiniendo el Papel del Arquitecto en la Empresa Digital
 el Camino hacia el Proceso de Desarrollo de Software Unificado
 el Manual del Dojo de Codificacion
 el Proceso de Desarrollo de Software
@@ -48,53 +50,51 @@ el Proceso de la Arquitectura de Software
 el Proceso Unificado de Desarrollo de Software
 el Proceso Unificado Racional una Introduccion
 Enciclopedia de la Seguridad Informatica
-Entrega Continua: Versiones de Software Confiables A Través de la Automatizacion de Compilacion, Prueba e Implementacion
+Entrega Continua Versiones de Software Confiables A Traves de la Automatizacion de Compilacion Prueba e Implementacion
 Estructuras de Datos en C
-Estructuras de Datos y Algoritmos Faciles en Java: Estructura de Datos y Rompecabezas Algoritmicos
-Evaluacion de Arquitecturas de Software: Métodos y Estudios de Caso
+Estructuras de Datos y Algoritmos Faciles en Java Estructura de Datos y Rompecabezas Algoritmicos
+Evaluacion de Arquitecturas de Software Metodos y Estudios de Caso
 Explicacion Del Proceso Unificado
 Fundamentos de Bases de Datos
-Fundamentos de la Arquitectura de Software: un Enfoque de Ingenieria
-Fundamentos de Programacion: Algoritmos, Estructura de Datos y Objetos
+Fundamentos de la Arquitectura de Software un Enfoque de Ingenieria
+Fundamentos de Programacion Algoritmos Estructura de Datos y Objetos
 Fundamentos de Spring Boot 2
-Gestion Continua de API: Tomar las Decisiones Correctas en un Entorno en evolucion
+Gestion Continua de API Tomar las Decisiones Correctas en un Entorno en evolucion
 Guia para el Cuerpo de Conocimientos de Ingenieria de Software
 Heuristica de Diseño Orientado a Objetos
 Implementacion del Diseño Basado en el Dominio
 Ingenieria de Software el Enfoque de un Profesional
-Ingenieria de Software: una Perspectiva Orientada a Objetos
+Ingenieria de Software una Perspectiva Orientada a Objetos
 Ingenieria y Arquitectura del Software
 Introduccion a la Programacion Orientada a Objetos con Java
 Introduccion a la Seguridad Informatica
 Introduccion a la Segurudad Informatica y el Analisis de Vulnerabilidad
-Introduccion a Los Patrones de Diseño: uun Enfoque Practico
+Introduccion a los Patrones de Diseño un Enfoque Practico
 Introduccion a los Sistemas de Bases de Datos
-la Ventaja de los Objetos: Reingenieria de Procesos de Negocio con Tecnologia de Objetos
+la Ventaja de los Objetos Reingenieria de Procesos de Negocio con Tecnologia de Objetos
 las Bases de Big Data
 Logica de Programacion Orientada a Objetos
 Manual del Arquitecto de Software
 Mas Alla de la Arquitectura de Software
 Metodologia de La Programacion Orientada a Objetos
 Microservicios un Enfoque Integrado
-Microsoft. NET: Arquitectura de Aplicaciones para la Empresa
-Mineria de datos: Modelos y algoritmos
-Patrones arquitectonicos de Microservicios Practicos: Microservicios Java Basados en Eventos con Spring Boot y Spring Cloud
+Microsoft.NET Arquitectura de Aplicaciones para la Empresa
+Mineria de datos Modelos y algoritmos
+Patrones arquitectonicos de Microservicios Practicos Microservicios Java Basados en Eventos con Spring Boot y Spring Cloud
 Patrones de Diseño
 Principios de Desarrollo de Software Agil Patrones y Practicas
-Pro Spring Security: Proteccion de Aplicaciones Java Basadas en Spring Framework
+Pro Spring Security Proteccion de Aplicaciones Java Basadas en Spring Framework
 Programacion Orientada a Objetos con C++
-Programacion Orientada a Objetos con Java: una Introduccion Practica
+Programacion Orientada a Objetos con Java una Introduccion Practica
 Programacion Orientada a Objetos Usando Java
-Proyectos de Spring Boot 2.0: Cree Aplicaciones Reactivas y Microservicios de Grado de Produccion con Spring Boot
-Refactorizacion en Grandes Proyectos de Software: Realizar Reestructuraciones Complejas Con Éxito
+Proyectos de Spring Boot 2.0 Cree Aplicaciones Reactivas y Microservicios de Grado de Produccion con Spring Boot
+Refactorizacion en Grandes Proyectos de Software Realizar Reestructuraciones Complejas con Exito
 Scrum: el Arte de hacer el Doble de Trabajo en la Mitad de Tiempo
-Software en 30 Dias: Como los Gerentes agiles Superan las Probabilidades, Deleitan a Sus Clientes y Dejan a los Competidores en el Polvo
-Spring Boot: En Marcha
-Spring: Microservicios con Spring Boot: Cree e Implemente Microservicios con Spring Bootç
-Analisis y Diseño de Sistemas
-Analisis y Diseño Orientado a Objetos con UML y el Proceso Unificado
-Teleinformatica para Ingenieros en Sistemas de Informacion.
-Teoria General de Sistemas: un Enfoque hacia la Ingenieria de Sistemas
-UML 2 y el Proceso Unificado: Analisis y Diseño Practico Orientado a Objetos
-UML Destilado - Tercera Edicion
-UML y Patrones: una Introduccion al Analisis y Diseño Orientado a Objetos y al Proceso Unificado
+Software en 30 Dias Como los Gerentes Agiles Superan las Probabilidades Deleitan a sus Clientes y Dejan a los Competidores en el Polvo
+Spring Boot en Marcha
+Spring Microservicios con Spring Boot Cree e Implemente Microservicios con Spring Boot
+Teleinformatica para Ingenieros en Sistemas de Informacion
+Teoria General de Sistemas un Enfoque hacia la Ingenieria de Sistemas
+UML 2 y el Proceso Unificado Analisis y Diseño Practico Orientado a Objetos
+UML Destilado Tercera Edicion
+UML y Patrones una Introduccion al Analisis y Diseño Orientado a Objetos y al Proceso Unificado
