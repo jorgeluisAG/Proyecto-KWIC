@@ -119,7 +119,7 @@ public class View extends JFrame implements ActionListener{
 						}
 					}
 					if(centi){
-						System.out.println("encontrado");
+						System.out.println("encontrado"+((String[])c.iteraciones)[i]);
 						titulo+=c.titulos+"\n";
 						break;
 					}
@@ -128,24 +128,26 @@ public class View extends JFrame implements ActionListener{
 		}
 		return titulo;
 	}
-
 	public static String[] Circular(String str,String palabras){
 		String pal[] = palabras_clave(str).split(" ");
 		String an="",des="",sum="";
 		String palabra[] = palabras.split(" ");
 		String cir[] = new String[palabra.length];
 		Boolean x=false;
-		for(int i=0;i<palabra.length;i++){
+		for(int i=0;i<palabra.length;i++){// aqui!!!!!!!!!!!!!!!!!!
 			sum="";
 			an="";
 			des="";
+			x=false;
 			for(int j=0;j<pal.length;j++){
 				if(palabra[i].equalsIgnoreCase(pal[j])){
+					x=true;
+				}
+				if(x){
 					an=an+pal[j]+" ";
 				}else{
 					des=des+pal[j]+" ";
 				}
-
 			}
 			sum=an+des;
 			cir[i]=sum;
@@ -155,7 +157,7 @@ public class View extends JFrame implements ActionListener{
 	}
 
 	public static String palabras_clave(String str){
-		String v[]={"12","para","97","2ª","las","los","con","como","que","no","lo","en","de","la","y","al","el","o","a","por","tu","si","-","1","2","3","4","5","6","7","8","9","0","del","Los","El","La","Una","Un","Uso","En","Las","Los","los","Del"};
+		String v[]={"hacia","Mas","30","2.0","mas","sobre","debe","e","12","para","97","2ª","las","los","con","como","que","no","lo","en","de","la","y","al","el","o","a","por","tu","si","-","1","2","3","4","5","6","7","8","9","0","del","Los","El","La","Una","Un","Uso","En","Las","Los","los","Del"};
 		String pal[] = str.split(" ");
 		String cont="";
 		Boolean centi=true,centi2=true;
@@ -170,7 +172,6 @@ public class View extends JFrame implements ActionListener{
 			}
 			if(centi!=true){
 				if(i!=v.length-1){
-
 					cont=cont+pal[i]+" ";
 				}else{
 					cont=cont+pal[i];
