@@ -2,7 +2,7 @@ package Proyecto_KWIC;
 
 public class keywords {
     String titulos;
-    Object Palabras;
+    String Palabras;
     Object iteraciones;
     keywords sgte;
 }
