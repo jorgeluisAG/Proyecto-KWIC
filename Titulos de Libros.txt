@@ -14,14 +14,14 @@ Arquitectura de Software Orientada a Patrones
 Arquitectura de Software Orientada a Patrones Sobre Patrones y Lenguajes de Patrones
 Arquitectura de Software Sostenible Analizar y Reducir la Deuda Tecnica
 Arquitectura de Software Suficiente un Enfoque Basado en el Riesgo
-Arquitectura de Software Fundamentos, Teoria y Practica
+Arquitectura de Software Fundamentos Teoria y Practica
 Arquitectura del Software Spanish Edition
 Arquitectura Limpia Una Guia para el Artesano sobre la Estructura y el Diseño del Software
 Arquitectura Limpia Guia para Especialistas en la Estructura y el Diseño de Software
 Arquitecturas Reactivas Front-End
 Analisis y Diseño de Sistemas
 Analisis y Diseño Orientado a Objetos con UML y el Proceso Unificado
-Big Data, Analisis de Grandes Volumenes de Datos en Organizaciones
+Big Data Analisis de Grandes Volumenes de Datos en Organizaciones
 Calidad de las Arquitecturas de Software
 Ciencia De Datos Desde Cero
 Ciencia de Datos y Analisis de Big Data Descubrir y Analizar
@@ -31,7 +31,7 @@ Curso de Programacion y Analisis de Software Tercera Edicion
 Curso de Programacion y Analisis de Software Integrado
 Desarrollador Web Front-End Javascript Html5 y Css3
 Desarrollo agil de Software con SCRUM
-Desarrollo de Aplicaciones Java con Spring y Spring Boot Soluciones Practicas de Spring y Spring Boot para Crear Aplicaciones
+Desarrollo de Aplicaciones Java con Spring y Soluciones Practicas de Spring y para Crear Aplicaciones
 Desarrollo Global de Software
 Diseño Basado en Modelos y Evaluacion de Aplicaciones Interactivas
 Diseño de Aplicaciones de Uso Intensivo de Datos
@@ -80,7 +80,7 @@ Metodologia de La Programacion Orientada a Objetos
 Microservicios un Enfoque Integrado
 Microsoft.NET Arquitectura de Aplicaciones para la Empresa
 Mineria de datos Modelos y algoritmos
-Patrones arquitectonicos de Microservicios Practicos Microservicios Java Basados en Eventos con Spring Boot y Spring Cloud
+Patrones arquitectonicos de Microservicios Practicos Microservicios Java Basados en Eventos con Spring Boot
 Patrones de Diseño
 Principios de Desarrollo de Software Agil Patrones y Practicas
 Pro Spring Security Proteccion de Aplicaciones Java Basadas en Spring Framework
@@ -89,8 +89,8 @@ Programacion Orientada a Objetos con Java una Introduccion Practica
 Programacion Orientada a Objetos Usando Java
 Proyectos de Spring Boot 2.0 Cree Aplicaciones Reactivas y Microservicios de Grado de Produccion con Spring Boot
 Refactorizacion en Grandes Proyectos de Software Realizar Reestructuraciones Complejas con Exito
-Scrum: el Arte de hacer el Doble de Trabajo en la Mitad de Tiempo
-Software en 30 Dias Como los Gerentes Agiles Superan las Probabilidades Deleitan a sus Clientes y Dejan a los Competidores en el Polvo
+Scrum el Arte de hacer el Doble de Trabajo en la Mitad de Tiempo
+Software en 30 Dias Como los Gerentes Agiles Superan las Probabilidades y Dejan a los Competidores en el Polvo
 Spring Boot en Marcha
 Spring Microservicios con Spring Boot Cree e Implemente Microservicios con Spring Boot
 Teleinformatica para Ingenieros en Sistemas de Informacion
